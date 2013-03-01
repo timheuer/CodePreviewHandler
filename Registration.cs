@@ -1,8 +1,8 @@
 using System;
 using System.Runtime.InteropServices;
-using MsdnMag;
+using TimHeuer.ManagedPreviewHandler;
 
-namespace SmilingGoat.PreviewHandlers
+namespace TimHeuer.PreviewHandlers
 {
     internal static class PreviewHandlerRegistration
     {

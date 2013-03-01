@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePreviewHandler", "CodePreviewHandler.csproj", "{2B886813-EC35-476B-B14C-BC6F0459BEC6}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CodePreviewHandlerSetup", "..\CodePreviewHandlerSetup\CodePreviewHandlerSetup.vdproj", "{DB602A44-DA9F-448C-B0DE-F0468296A641}"

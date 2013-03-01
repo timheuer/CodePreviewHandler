@@ -5,10 +5,10 @@ using System.Configuration.Install;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-namespace SmilingGoat.PreviewHandlers
+namespace TimHeuer.PreviewHandlers
 {
     [RunInstaller(true)]
-    public partial class ComInstaller : Installer
+    public class ComInstaller : Installer
     {
         public override void Install(IDictionary stateSaver)
         {
