@@ -10,7 +10,7 @@ namespace TimHeuer.PreviewHandlers
         {
             get 
             {
-                string str = base.Keywords + "auto static_cast reinterpret_cast dynamic_cast";
+                string str = base.Keywords + "#include auto static_cast reinterpret_cast dynamic_cast safe_cast nullptr";
                 return str;
             }
         }
