@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="CodePreviewHandler.cs" />
     <Compile Include="CppFormat.cs" />
+    <Compile Include="CssFormat.cs" />
     <Compile Include="HtmlViewer\Element.cs" />
     <Compile Include="HtmlViewer\FontUnit.cs" />
     <Compile Include="HtmlViewer\HtmlCommandInfo.cs" />
@@ -110,7 +111,7 @@
     <Component Include="Libraries\CSharpFormat.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Libraries\TimHeuer.ManagedPreviewHandler.dll" />
+    <Component Include="Libraries\TimHeuer.ManagedPreviewHandler.dll" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
