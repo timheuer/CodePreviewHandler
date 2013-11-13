@@ -9,7 +9,7 @@ using TimHeuer.PreviewHandlers.Properties;
 
 namespace TimHeuer.PreviewHandlers
 {
-    [PreviewHandler("Source Code Preview Handler", ".cs;.vb;.sql;.js;.xaml;.xml;.htm;.html;.cpp;.h;.targets;.target", "{93E38957-78C4-40e2-9B1D-E202B43C6D23}")]
+    [PreviewHandler("Source Code Preview Handler", ".cs;.vb;.sql;.js;.xaml;.xml;.uix;.htm;.html;.cpp;.h;.hpp;.targets;.target", "{93E38957-78C4-40e2-9B1D-E202B43C6D23}")]
     [ProgId("TimHeuer.PreviewHandlers.CodePreviewHandler")]
     [Guid("0E1B4233-AEB5-4c5b-BF31-21766492B301")]
     [ClassInterface(ClassInterfaceType.None)]
@@ -44,6 +44,7 @@ namespace TimHeuer.PreviewHandlers
                 {
                     case ".h":
                     case ".cpp":
+                    case ".hpp":
                         CppFormat cpp = new CppFormat();
                         formatted = cpp.FormatCode(sourceCode);
                         break;
@@ -69,6 +70,7 @@ namespace TimHeuer.PreviewHandlers
                     case ".htm":
                     case ".target":
                     case ".targets":
+                    case ".uix":
                         Manoli.Utils.CSharpFormat.HtmlFormat xml = new Manoli.Utils.CSharpFormat.HtmlFormat();
                         formatted = xml.FormatCode(sourceCode);
                         break;
