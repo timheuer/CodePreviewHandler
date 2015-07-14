@@ -49,7 +49,7 @@ namespace TimHeuer.PreviewHandlers
                         formatted = cpp.FormatCode(sourceCode);
                         break;
                     case ".cs":
-                        Manoli.Utils.CSharpFormat.CSharpFormat cs = new Manoli.Utils.CSharpFormat.CSharpFormat();
+                        CSharpFormat cs = new CSharpFormat();
                         formatted = cs.FormatCode(sourceCode);
                         break;
                     case ".vb":

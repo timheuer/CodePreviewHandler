@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="CodePreviewHandler.cs" />
     <Compile Include="CppFormat.cs" />
+    <Compile Include="CsharpFormat.cs" />
     <Compile Include="CssFormat.cs" />
     <Compile Include="HtmlViewer\Element.cs" />
     <Compile Include="HtmlViewer\FontUnit.cs" />
