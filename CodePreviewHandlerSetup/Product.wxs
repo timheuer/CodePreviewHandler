@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Language="1033" Manufacturer="Tim Heuer" Name="Code File Preview Handler"
+           UpgradeCode="20B0FBBC-7C83-4696-85DF-F04260082345" Version="!(bind.fileVersion.CodePreviewHandlerFile)">
+    <Package Comments="Windows and Outlook PreviewHandler for CS, VB, and SQL files" Compressed="yes" />
+
+    <MediaTemplate EmbedCab="yes" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed."/>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder" Name="PFiles">
+        <Directory Id="ManufacturerDir" Name="!(bind.Property.Manufacturer)">
+          <Directory Id="ProductDir" Name="!(bind.Property.ProductName)">
+            <Directory Id="VersionDir" Name="!(bind.Property.ProductVersion)" />
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <Feature Id="DefaultFeature">
+      <ComponentGroupRef Id="Components"/>
+    </Feature>
+
+    <Property Id="ARPCONTACT" Value="!(bind.Property.Manufacturer)" />
+    <Property Id="ARPCOMMENTS" Value="Windows and Outlook PreviewHandler for CS, VB, and SQL files" />
+    <Property Id="ARPURLINFOABOUT" Value="http://timheuer.com" />
+
+    <UIRef Id="WixUI_Minimal" />
+  </Product>
+</Wix>
