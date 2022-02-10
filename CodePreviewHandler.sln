@@ -2,6 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePreviewHandler", "CodePreviewHandler.csproj", "{2B886813-EC35-476B-B14C-BC6F0459BEC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePreviewHandler", "CodePreviewHandler\CodePreviewHandler.csproj", "{2B886813-EC35-476B-B14C-BC6F0459BEC6}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "CodePreviewHandlerSetup", "CodePreviewHandlerSetup\CodePreviewHandlerSetup.isproj", "{C641CC2B-1732-4654-A37E-2C0ADF11E491}"
 EndProject
